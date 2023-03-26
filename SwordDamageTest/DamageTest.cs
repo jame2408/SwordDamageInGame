@@ -11,31 +11,39 @@ public class DamageTest
     public void SetUp()
     {
         // 建立計算傷害的物件
-        _swordDamage = new SwordDamage(); 
+        _swordDamage = new SwordDamage();
     }
-    
+
     [TestMethod]
     public void TestBasicDamage_RollIsGiven10_DamageShouldBe13()
     {
         GivenSwordDamagePoints(10);
-        DamageShouldBe(13);
+        DamageShouldBe(DamageTypeEnum.Basic, 13);
     }
 
     [TestMethod]
     public void TestBasicDamage_RollIsGiven18_DamageShouldBe21()
     {
         GivenSwordDamagePoints(18);
-        DamageShouldBe(21);
+        DamageShouldBe(DamageTypeEnum.Basic, 21);
     }
+
+    [TestMethod]
+    public void TestFlameDamage_RollIsGiven3_DamageShouldBe8()
+    {
+        GivenSwordDamagePoints(3);
+        DamageShouldBe(DamageTypeEnum.Flame, 8);
+    }
+
 
     private void GivenSwordDamagePoints(int swordDamageRoll)
     {
         _swordDamage.Roll = swordDamageRoll;
     }
 
-    private void DamageShouldBe(int expected)
+    private void DamageShouldBe(DamageTypeEnum damageType, int expected)
     {
-        var damage = _swordDamage.Damage();
+        var damage = _swordDamage.Damage(damageType);
         Assert.AreEqual(expected, damage);
     }
 }
