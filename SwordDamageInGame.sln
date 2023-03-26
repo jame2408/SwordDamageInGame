@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwordDamageTest", "SwordDamageTest\SwordDamageTest.csproj", "{6E2D61B0-49F7-45DE-9917-C05EECBE9FB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwordDamageInGame", "SwordDamageInGame\SwordDamageInGame.csproj", "{D3045059-D3A0-4D4D-ACF3-04E37CE25850}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2D61B0-49F7-45DE-9917-C05EECBE9FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2D61B0-49F7-45DE-9917-C05EECBE9FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2D61B0-49F7-45DE-9917-C05EECBE9FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2D61B0-49F7-45DE-9917-C05EECBE9FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3045059-D3A0-4D4D-ACF3-04E37CE25850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3045059-D3A0-4D4D-ACF3-04E37CE25850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3045059-D3A0-4D4D-ACF3-04E37CE25850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3045059-D3A0-4D4D-ACF3-04E37CE25850}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
