@@ -35,6 +35,13 @@ public class DamageTest
         DamageShouldBe(DamageTypeEnum.Flame, 8);
     }
 
+    [TestMethod]
+    public void TestMagicDamage_RollIsGiven10_DamageShouldBe23()
+    {
+        GivenSwordDamagePoints(10);
+        DamageShouldBe(DamageTypeEnum.Magic, 23);
+    }
+
 
     private void GivenSwordDamagePoints(int swordDamageRoll)
     {

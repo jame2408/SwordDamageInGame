@@ -8,6 +8,11 @@ public class SwordDamage
 
     public int Damage(DamageTypeEnum damageType)
     {
+        if (damageType==DamageTypeEnum.Magic)
+        {
+            return (int)Math.Round(Roll * 1.75M, 0) + BaseDamage + FlameDamage;
+        }
+        
         if (damageType == DamageTypeEnum.Flame)
         {
             return Roll + BaseDamage + FlameDamage;
