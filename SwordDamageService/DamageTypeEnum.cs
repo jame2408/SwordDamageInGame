@@ -1,4 +1,4 @@
-﻿namespace SwordDamageInGame;
+﻿namespace SwordDamageService;
 
 public enum DamageTypeEnum
 {

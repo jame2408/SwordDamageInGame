@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SwordDamageInGame\SwordDamageInGame.csproj" />
+      <ProjectReference Include="..\SwordDamageService\SwordDamageService.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-using SwordDamageInGame;
+using SwordDamageService;
 
 namespace SwordDamageTest;
 
